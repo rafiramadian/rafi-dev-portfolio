@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react'
+import { Github, Linkedin, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -79,6 +79,23 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="bg-green-100 dark:bg-green-900 p-3 rounded-lg">
+                    <MessageCircle className="text-green-600 dark:text-green-400" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">WhatsApp</h4>
+                    <a 
+                      href="https://wa.me/6289525333241"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
+                    >
+                      Message on WhatsApp
+                    </a>
+                  </div>
+                </div>
               </div>
               
               <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
@@ -101,14 +118,6 @@ export default function Contact() {
                     className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
                   >
                     <Linkedin size={20} />
-                  </a>
-                  <a
-                    href="https://twitter.com/rafiramadian"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-blue-400 text-white p-3 rounded-lg hover:bg-blue-500 transition-colors"
-                  >
-                    <Twitter size={20} />
                   </a>
                 </div>
               </div>
@@ -191,7 +200,7 @@ export default function Contact() {
         className="text-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-700"
       >
         <p className="text-gray-600 dark:text-gray-300">
-          © 2025 Rafi Ramadian Rahman. Built with Next.js and deployed on Vercel.
+          © 2025 Rafi Ramadian Rahman.
         </p>
       </motion.div>
     </section>
