@@ -19,7 +19,8 @@ export default function Contact() {
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             I&apos;m always open to discussing new opportunities, interesting projects, 
-            or just having a chat about technology. Let&apos;s connect!
+            or collaborations. Whether you&apos;re looking for a Flutter developer, mobile engineer, 
+            or want to chat about mobile app development, let&apos;s connect!
           </p>
         </motion.div>
 
@@ -44,10 +45,10 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
                     <a 
-                      href="mailto:rafi@example.com"
+                      href="mailto:rafiramadian.r@gmail.com"
                       className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     >
-                      rafi@example.com
+                      rafiramadian.r@gmail.com
                     </a>
                   </div>
                 </div>
@@ -59,10 +60,10 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
                     <a 
-                      href="tel:+1234567890"
+                      href="tel:+6289525333241"
                       className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
                     >
-                      +1 (234) 567-890
+                      +62 895 2533 3241
                     </a>
                   </div>
                 </div>
@@ -74,7 +75,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">Location</h4>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Your City, Country
+                      Jakarta, Indonesia
                     </p>
                   </div>
                 </div>
@@ -94,7 +95,7 @@ export default function Contact() {
                     <Github size={20} />
                   </a>
                   <a
-                    href="https://linkedin.com/in/rafiramadian"
+                    href="https://www.linkedin.com/in/rafiramadian/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -190,7 +191,7 @@ export default function Contact() {
         className="text-center mt-16 pt-8 border-t border-gray-200 dark:border-gray-700"
       >
         <p className="text-gray-600 dark:text-gray-300">
-          © 2025 Rafi Ramadian. Built with Next.js and deployed on Vercel.
+          © 2025 Rafi Ramadian Rahman. Built with Next.js and deployed on Vercel.
         </p>
       </motion.div>
     </section>

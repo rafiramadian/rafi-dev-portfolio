@@ -19,7 +19,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Rafi</span>
+            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-400">Rafi Ramadian Rahman</span>
           </motion.h1>
           
           <motion.p 
@@ -28,7 +28,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Full Stack Developer & Software Engineer
+            Flutter Developer & Mobile Engineer
           </motion.p>
           
           <motion.p 
@@ -37,8 +37,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            I build exceptional digital experiences with modern technologies. 
-            Passionate about creating clean, efficient code and user-friendly applications.
+            Passionate Flutter developer with 3+ years of experience building high-quality, 
+            cross-platform applications for Android, iOS, and Web. Specialized in advanced Flutter development 
+            with expertise in Firebase, state management, and modern mobile architecture.
           </motion.p>
           
           <motion.div 
@@ -58,7 +59,7 @@ export default function Hero() {
             </a>
             
             <a
-              href="https://linkedin.com/in/rafiramadian"
+              href="https://www.linkedin.com/in/rafiramadian/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -68,7 +69,7 @@ export default function Hero() {
             </a>
             
             <a
-              href="mailto:rafi@example.com"
+              href="mailto:rafiramadian.r@gmail.com"
               className="flex items-center space-x-2 px-6 py-3 border-2 border-gray-900 dark:border-gray-300 text-gray-900 dark:text-gray-300 rounded-lg hover:bg-gray-900 hover:text-white dark:hover:bg-gray-300 dark:hover:text-gray-900 transition-colors"
             >
               <Mail size={20} />

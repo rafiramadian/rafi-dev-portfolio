@@ -5,36 +5,40 @@ import { ExternalLink, Folder, Github } from 'lucide-react'
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, product catalog, shopping cart, and payment processing.",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    githubUrl: "https://github.com/rafiramadian/ecommerce-platform",
-    image: "/placeholder-project-1.jpg"
+    title: "EKUID - Securities Crowdfunding App",
+    description: "A comprehensive securities crowdfunding platform that connects investors with promising startups. Built with advanced Flutter architecture, featuring real-time data synchronization, secure authentication, and seamless cross-platform experience.",
+    technologies: ["Flutter", "BLoC", "Realm", "GraphQL", "Firebase", "Codemagic CI/CD"],
+    liveUrl: "https://apps.apple.com/id/app/ekuid-investasi-crowdfunding/id1607289110?l=id",
+    githubUrl: null, // private
+    image: "/placeholder-project-1.jpg",
+    isPrivate: true
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with React and Node.js.",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-    liveUrl: "https://taskmanager-demo.vercel.app",
-    githubUrl: "https://github.com/rafiramadian/task-manager",
-    image: "/placeholder-project-2.jpg"
+    title: "Sayo Read & Listen",
+    description: "An innovative reading and listening platform that combines traditional reading with AI-powered audio features. Developed with Flutter Web and integrated with OpenAI services for enhanced user experience.",
+    technologies: ["Flutter", "Riverpod", "Firebase", "OpenAI", "RESTful API"],
+    liveUrl: "https://read.sayo.ai/",
+    githubUrl: null, // private
+    image: "/placeholder-project-2.jpg",
+    isPrivate: true
   },
   {
-    title: "Weather Dashboard",
-    description: "A responsive weather application that provides current weather data, forecasts, and location-based weather information with beautiful data visualizations.",
-    technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind CSS"],
-    liveUrl: "https://weather-dashboard-demo.vercel.app",
-    githubUrl: "https://github.com/rafiramadian/weather-dashboard",
-    image: "/placeholder-project-3.jpg"
+    title: "Hofung Reading Platform",
+    description: "A specialized reading platform designed for Hofung College, featuring Firebase integration, user authentication, and cloud storage. Built with Flutter Web for optimal performance and accessibility.",
+    technologies: ["Flutter", "Riverpod", "Firebase", "Firebase Hosting", "OpenAI"],
+    liveUrl: "https://hofung-reading.web.app/",
+    githubUrl: null, // private
+    image: "/placeholder-project-3.jpg",
+    isPrivate: true
   },
   {
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with Next.js and Framer Motion. Features smooth animations, dark mode support, and optimized performance.",
-    technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://rafiramadian.vercel.app",
-    githubUrl: "https://github.com/rafiramadian/portfolio",
-    image: "/placeholder-project-4.jpg"
+    title: "Agape88 Warehouse Dashboard",
+    description: "A comprehensive warehouse management dashboard built for inventory tracking and administration. Features real-time data updates, user management, and streamlined warehouse operations interface.",
+    technologies: ["Flutter", "BLoC", "Firebase", "Firebase Hosting", "Cloud Firestore"],
+    liveUrl: "https://gamisjktstock.online/",
+    githubUrl: null, // private
+    image: "/placeholder-project-4.jpg",
+    isPrivate: true
   }
 ]
 
@@ -102,15 +106,22 @@ export default function Projects() {
                     <span>Live Demo</span>
                   </a>
                   
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-sm"
-                  >
-                    <Github size={16} />
-                    <span>Code</span>
-                  </a>
+                  {project.isPrivate ? (
+                    <div className="flex items-center space-x-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-500 rounded-lg text-sm">
+                      <Github size={16} />
+                      <span>Private</span>
+                    </div>
+                  ) : (
+                    <a
+                      href={project.githubUrl || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-sm"
+                    >
+                      <Github size={16} />
+                      <span>Code</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

@@ -4,36 +4,36 @@ import { motion } from 'framer-motion'
 
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Mobile & Frontend",
     skills: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "Vue.js", level: 75 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "HTML/CSS", level: 95 }
+      { name: "Flutter", level: 90 },
+      { name: "Next.js", level: 70 },
+      { name: "React.js", level: 60 },
+      { name: "JavaScript", level: 78 },
+      { name: "HTML", level: 85 },
+      { name: "Tailwind CSS", level: 65 }
     ]
   },
   {
-    title: "Backend",
+    title: "Backend & Database",
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express.js", level: 80 },
-      { name: "Python", level: 75 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "MongoDB", level: 75 },
-      { name: "REST APIs", level: 85 }
+      { name: "Firebase", level: 95 },
+      { name: "Firebase Firestore", level: 95 },
+      { name: "Supabase", level: 75 },
+      { name: "GraphQL", level: 80 },
+      { name: "RESTful APIs", level: 85 },
+      { name: "Realm Database", level: 85 }
     ]
   },
   {
-    title: "Tools & Others",
+    title: "Tools & DevOps",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
-      { name: "Vercel", level: 85 },
-      { name: "Figma", level: 75 },
-      { name: "Jest", level: 80 }
+      { name: "Git", level: 95 },
+      { name: "Codemagic CI/CD", level: 95 },
+      { name: "Android Studio", level: 85 },
+      { name: "VS Code", level: 90 },
+      { name: "Bloc/Riverpod", level: 90 },
+      { name: "Firebase Hosting", level: 85 }
     ]
   }
 ]
@@ -108,8 +108,9 @@ export default function Skills() {
         >
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             I&apos;m always eager to learn new technologies and improve my skills. 
-            If you have a project that requires different tools or frameworks, 
-            I&apos;m confident in my ability to adapt and deliver quality results.
+            Currently expanding my expertise in Next.js and React while maintaining 
+            my focus on Flutter development. I&apos;m confident in my ability to adapt 
+            and deliver quality results across different platforms and technologies.
           </p>
         </motion.div>
       </div>

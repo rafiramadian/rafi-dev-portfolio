@@ -25,7 +25,7 @@ export default function Navigation() {
             transition={{ duration: 0.5 }}
           >
             <a href="#home" className="text-xl font-bold text-gray-900 dark:text-white">
-              Rafi Ramadian
+              Rafi Ramadian Rahman
             </a>
           </motion.div>
 

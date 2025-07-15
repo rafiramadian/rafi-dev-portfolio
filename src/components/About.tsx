@@ -38,16 +38,26 @@ export default function About() {
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                I&apos;m a passionate full-stack developer with a love for creating 
-                innovative solutions. My journey began with curiosity about how 
-                websites work, and it has evolved into a career focused on building 
-                exceptional digital experiences.
+                I am a passionate Flutter Developer with nearly three years of experience building 
+                high-quality, cross-platform applications. My journey began with a solid academic 
+                foundation at Universitas Pendidikan Indonesia, but it was during my time at Alterra 
+                Academy that I sharpened my practical skills by developing a fully functional mobile 
+                application as a capstone project.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                Since then, I&apos;ve advanced through various roles, including internships and freelance 
+                projects, where I delivered web and mobile solutions using Flutter. I&apos;ve worked 
+                extensively with Firebase, RESTful and GraphQL APIs, and applied state management 
+                solutions like Bloc and Riverpod to create scalable, responsive apps.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I believe in writing clean, maintainable code and staying up-to-date 
-                with the latest technologies. When I&apos;m not coding, you can find me 
-                exploring new frameworks, contributing to open source, or sharing 
-                knowledge with the developer community.
+                Currently, I work as a Mobile Engineer at Ekuid, where I develop and maintain 
+                performance-driven applications for Android and iOS. I collaborate closely with 
+                designers and product managers to create user-friendly interfaces and ensure a 
+                seamless experience through CI/CD pipelines with Codemagic. In parallel, I also 
+                work as a Freelance Flutter Developer with the Applied Artificial Intelligence 
+                Laboratory (AAIL) in Hong Kong, where I help integrate AI-powered educational 
+                solutions into mobile and web applications.
               </p>
             </div>
           </motion.div>
@@ -63,30 +73,30 @@ export default function About() {
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg text-center">
                 <Code className="text-blue-600 dark:text-blue-400 mx-auto mb-4" size={32} />
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  Clean Code
+                  Cross-Platform
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Writing maintainable and scalable code is my priority
+                  Advanced Flutter development for Android, iOS, and Web
                 </p>
               </div>
               
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg text-center">
                 <Heart className="text-red-600 dark:text-red-400 mx-auto mb-4" size={32} />
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  User Experience
+                  Performance
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Creating intuitive and delightful user experiences
+                  Optimized, scalable applications with focus on user experience
                 </p>
               </div>
               
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg text-center sm:col-span-2">
                 <Coffee className="text-yellow-600 dark:text-yellow-400 mx-auto mb-4" size={32} />
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  Continuous Learning
+                  Modern Architecture
                 </h4>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Always exploring new technologies and improving my skills
+                  State management with Bloc/Riverpod, Firebase integration, and CI/CD
                 </p>
               </div>
             </div>

@@ -13,23 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rafi Ramadian - Full Stack Developer",
-  description: "Full Stack Developer & Software Engineer specializing in React, Next.js, and modern web technologies. Building exceptional digital experiences.",
-  keywords: ["Full Stack Developer", "Software Engineer", "React", "Next.js", "TypeScript", "Web Development"],
-  authors: [{ name: "Rafi Ramadian" }],
+  title: "Rafi Ramadian Rahman - Flutter Developer & Mobile Engineer",
+  description: "Flutter Developer & Mobile Engineer with 3+ years of experience building high-quality cross-platform applications for Android, iOS, and Web. Specialized in Firebase, state management, and modern mobile architecture.",
+  keywords: ["Flutter Developer", "Mobile Engineer", "Flutter", "Android", "iOS", "Firebase", "Mobile App Development", "Cross-Platform", "Dart"],
+  authors: [{ name: "Rafi Ramadian Rahman" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
-    title: "Rafi Ramadian - Full Stack Developer",
-    description: "Full Stack Developer & Software Engineer specializing in React, Next.js, and modern web technologies.",
+    title: "Rafi Ramadian Rahman - Flutter Developer & Mobile Engineer",
+    description: "Flutter Developer & Mobile Engineer with 3+ years of experience building high-quality cross-platform applications.",
     type: "website",
-    url: "https://rafiramadian.vercel.app",
-    siteName: "Rafi Ramadian Portfolio",
+    url: "https://rafi-dev-portfolio-5pddq2cic-rafiramadians-projects.vercel.app",
+    siteName: "Rafi Ramadian Rahman Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rafi Ramadian - Full Stack Developer",
-    description: "Full Stack Developer & Software Engineer specializing in React, Next.js, and modern web technologies.",
+    title: "Rafi Ramadian Rahman - Flutter Developer & Mobile Engineer",
+    description: "Flutter Developer & Mobile Engineer with 3+ years of experience building high-quality cross-platform applications.",
     creator: "@rafiramadian",
   },
 };
