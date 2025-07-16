@@ -1,9 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import { Menu, X, Sun, Moon } from 'lucide-react'
-import { useState } from 'react'
 import { useTheme } from '@/contexts/ThemeContext'
+import { motion } from 'framer-motion'
+import { Menu, Moon, Sun, X } from 'lucide-react'
+import { useState } from 'react'
 
 const navigation = [
   { name: 'Home', href: '#home' },
