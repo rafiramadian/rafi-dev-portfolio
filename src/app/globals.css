@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Removed invalid @variant at-rule */
+@variant dark (.dark &);
 
 /* Let Tailwind handle all colors */
 body {
