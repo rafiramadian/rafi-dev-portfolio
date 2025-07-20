@@ -1,7 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Folder, Github } from 'lucide-react'
+import { ExternalLink, Eye, Folder, Github } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const projects = [
   {
@@ -37,8 +39,9 @@ const projects = [
     technologies: ["Flutter", "BLoC", "Firebase", "Firebase Hosting", "Cloud Firestore"],
     liveUrl: "https://gamisjktstock.online/",
     githubUrl: null, // private
-    image: "/placeholder-project-4.jpg",
-    isPrivate: true
+    image: "/projects/agape88/hero-banner.png",
+    isPrivate: true,
+    detailUrl: "/projects/agape88"
   }
 ]
 
@@ -71,8 +74,19 @@ export default function Projects() {
               viewport={{ once: true }}
               className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                <Folder size={64} className="text-white opacity-50" />
+              <div className="h-48 relative bg-gradient-to-br from-blue-400 to-purple-500">
+                {project.image && project.image !== '/placeholder-project-4.jpg' ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="h-full flex items-center justify-center">
+                    <Folder size={64} className="text-white opacity-50" />
+                  </div>
+                )}
               </div>
               
               <div className="p-6">
@@ -95,7 +109,7 @@ export default function Projects() {
                   ))}
                 </div>
                 
-                <div className="flex space-x-4">
+                <div className="flex flex-wrap gap-2 mb-6">
                   <a
                     href={project.liveUrl}
                     target="_blank"
@@ -105,6 +119,16 @@ export default function Projects() {
                     <ExternalLink size={16} />
                     <span>Live Demo</span>
                   </a>
+                  
+                  {project.detailUrl && (
+                    <Link
+                      href={project.detailUrl}
+                      className="flex items-center space-x-2 px-4 py-2 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white transition-colors text-sm"
+                    >
+                      <Eye size={16} />
+                      <span>View Details</span>
+                    </Link>
+                  )}
                   
                   {project.isPrivate ? (
                     <div className="flex items-center space-x-2 px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-500 rounded-lg text-sm">
