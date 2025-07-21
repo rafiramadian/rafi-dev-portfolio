@@ -3,7 +3,7 @@
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, MapPin, MessageCircle, Phone } from 'lucide-react'
-import { useRef, useState, useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null)
@@ -209,7 +209,7 @@ export default function Contact() {
                       href="tel:+6289525333241"
                       className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
                     >
-                      +62 895 2533 3241
+                      +62 895 2533 2341
                     </a>
                   </div>
                 </div>
@@ -233,7 +233,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 dark:text-white">WhatsApp</h4>
                     <a 
-                      href="https://wa.me/6289525333241"
+                      href="https://wa.me/6289525332341"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
